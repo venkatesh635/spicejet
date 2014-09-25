@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestAll">
+   <test name="cargo Test">
+    <classes>
+      <class name="tests.cargotest" />
+       </classes>
+  </test>
+  
+   <test name="footer Test">
+    <classes>
+      <class name="tests.footer" />
+       </classes>
+  </test>
+     
+      <test name=" socialsitesTest">
+    <classes>
+      <class name="tests.socialsites" />
+       </classes>
+  </test>  
+  
+   <test name=" header Test">
+    <classes>
+      <class name="tests.header" />
+       </classes>
+  </test>  
+  
+</suite>

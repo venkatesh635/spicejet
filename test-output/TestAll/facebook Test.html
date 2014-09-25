@@ -1,0 +1,332 @@
+<html>
+<head>
+<title>TestNG:  facebook Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>facebook Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 23 17:59:09 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>53 seconds (53170 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.socialsites.beforemethod()'><b>beforemethod</b><br>Test class: tests.socialsites</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ion app-system-local
+1411475354038	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1411475354039	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1411475354042	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\fxdriver@googlecode.com
+1411475354042	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\webdriver-staging
+1411475354043	addons.xpi	DEBUG	checkForChanges
+1411475354062	addons.xpi	DEBUG	Directory state JSON differs: cache [] state [{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1411372514680,&quot;rdfTime&quot;:1411372514428}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\Nexii\\AppData\\Local\\Temp\\anonymous146761572136294714webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1411475353356,&quot;rdfTime&quot;:1411475352727}}}]
+1411475354075	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions.json
+1411475354077	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1411475354262	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1411475354266	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354267	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354267	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1411475354273	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1411475354273	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354273	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354289	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1411475354289	addons.xpi-utils	DEBUG	Updating add-on states
+1411475354290	addons.xpi-utils	DEBUG	Writing add-ons list
+1411475356123	DeferredSave.extensions.json	DEBUG	Starting timer
+1411475356160	DeferredSave.extensions.json	DEBUG	Starting write
+1411475356263	addons.manager	DEBUG	shutdown
+1411475356268	addons.xpi	DEBUG	shutdown
+1411475356269	addons.xpi-utils	DEBUG	shutdown
+1411475356427	DeferredSave.extensions.json	DEBUG	Write succeeded
+1411475356427	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1411475356428	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1411475356436	addons.manager	DEBUG	Async provider shutdown done
+1411475357112	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1411475357118	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1411475357125	addons.xpi	DEBUG	startup
+1411475357126	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1411475357127	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1411475357129	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1411475357132	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\fxdriver@googlecode.com
+1411475357133	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\webdriver-staging
+1411475357133	addons.xpi	DEBUG	checkForChanges
+1411475357158	addons.xpi	DEBUG	No changes found
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;TRAINING04&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at testutils.Helper.browserType(Helper.java:22)
+	at tests.socialsites.beforemethod(socialsites.java:25)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ion app-system-local
+1411475354038	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1411475354039	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1411475354042	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\fxdriver@googlecode.com
+1411475354042	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\webdriver-staging
+1411475354043	addons.xpi	DEBUG	checkForChanges
+1411475354062	addons.xpi	DEBUG	Directory state JSON differs: cache [] state [{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1411372514680,&quot;rdfTime&quot;:1411372514428}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\Nexii\\AppData\\Local\\Temp\\anonymous146761572136294714webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1411475353356,&quot;rdfTime&quot;:1411475352727}}}]
+1411475354075	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions.json
+1411475354077	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1411475354262	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1411475354266	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354267	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354267	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1411475354273	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1411475354273	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354273	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354289	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1411475354289	addons.xpi-utils	DEBUG	Updating add-on states
+1411475354290	addons.xpi-utils	DEBUG	Writing add-ons list
+1411475356123	DeferredSave.extensions.json	DEBUG	Starting timer
+1411475356160	DeferredSave.extensions.json	DEBUG	Starting write
+1411475356263	addons.manager	DEBUG	shutdown
+1411475356268	addons.xpi	DEBUG	shutdown
+1411475356269	addons.xpi-utils	DEBUG	shutdown
+1411475356427	DeferredSave.extensions.json	DEBUG	Write succeeded
+1411475356427	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1411475356428	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1411475356436	addons.manager	DEBUG	Async provider shutdown done
+1411475357112	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1411475357118	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1411475357125	addons.xpi	DEBUG	startup
+1411475357126	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1411475357127	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1411475357129	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1411475357132	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\fxdriver@googlecode.com
+1411475357133	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\webdriver-staging
+1411475357133	addons.xpi	DEBUG	checkForChanges
+1411475357158	addons.xpi	DEBUG	No changes found
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 33 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32250839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32250839'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ion app-system-local
+1411475354038	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1411475354039	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1411475354042	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\fxdriver@googlecode.com
+1411475354042	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\webdriver-staging
+1411475354043	addons.xpi	DEBUG	checkForChanges
+1411475354062	addons.xpi	DEBUG	Directory state JSON differs: cache [] state [{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1411372514680,&quot;rdfTime&quot;:1411372514428}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\Nexii\\AppData\\Local\\Temp\\anonymous146761572136294714webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1411475353356,&quot;rdfTime&quot;:1411475352727}}}]
+1411475354075	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions.json
+1411475354077	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1411475354262	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1411475354266	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354267	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354267	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1411475354273	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1411475354273	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354273	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354289	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1411475354289	addons.xpi-utils	DEBUG	Updating add-on states
+1411475354290	addons.xpi-utils	DEBUG	Writing add-ons list
+1411475356123	DeferredSave.extensions.json	DEBUG	Starting timer
+1411475356160	DeferredSave.extensions.json	DEBUG	Starting write
+1411475356263	addons.manager	DEBUG	shutdown
+1411475356268	addons.xpi	DEBUG	shutdown
+1411475356269	addons.xpi-utils	DEBUG	shutdown
+1411475356427	DeferredSave.extensions.json	DEBUG	Write succeeded
+1411475356427	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1411475356428	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1411475356436	addons.manager	DEBUG	Async provider shutdown done
+1411475357112	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1411475357118	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1411475357125	addons.xpi	DEBUG	startup
+1411475357126	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1411475357127	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1411475357129	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1411475357132	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\fxdriver@googlecode.com
+1411475357133	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\webdriver-staging
+1411475357133	addons.xpi	DEBUG	checkForChanges
+1411475357158	addons.xpi	DEBUG	No changes found
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;TRAINING04&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at testutils.Helper.browserType(Helper.java:22)
+	at tests.socialsites.beforemethod(socialsites.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ion app-system-local
+1411475354038	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1411475354039	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1411475354042	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\fxdriver@googlecode.com
+1411475354042	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\webdriver-staging
+1411475354043	addons.xpi	DEBUG	checkForChanges
+1411475354062	addons.xpi	DEBUG	Directory state JSON differs: cache [] state [{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1411372514680,&quot;rdfTime&quot;:1411372514428}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\Nexii\\AppData\\Local\\Temp\\anonymous146761572136294714webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1411475353356,&quot;rdfTime&quot;:1411475352727}}}]
+1411475354075	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions.json
+1411475354077	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1411475354262	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1411475354266	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354267	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354267	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1411475354273	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1411475354273	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354273	DeferredSave.extensions.json	DEBUG	Save changes
+1411475354289	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1411475354289	addons.xpi-utils	DEBUG	Updating add-on states
+1411475354290	addons.xpi-utils	DEBUG	Writing add-ons list
+1411475356123	DeferredSave.extensions.json	DEBUG	Starting timer
+1411475356160	DeferredSave.extensions.json	DEBUG	Starting write
+1411475356263	addons.manager	DEBUG	shutdown
+1411475356268	addons.xpi	DEBUG	shutdown
+1411475356269	addons.xpi-utils	DEBUG	shutdown
+1411475356427	DeferredSave.extensions.json	DEBUG	Write succeeded
+1411475356427	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1411475356428	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1411475356436	addons.manager	DEBUG	Async provider shutdown done
+1411475357112	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1411475357118	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1411475357125	addons.xpi	DEBUG	startup
+1411475357126	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1411475357127	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1411475357129	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1411475357132	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\fxdriver@googlecode.com
+1411475357133	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Nexii\AppData\Local\Temp\anonymous146761572136294714webdriver-profile\extensions\webdriver-staging
+1411475357133	addons.xpi	DEBUG	checkForChanges
+1411475357158	addons.xpi	DEBUG	No changes found
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 33 more
+</pre></div></td>
+<td>0</td>
+<td>tests.socialsites@2c79a5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.socialsites.aftermethod()'><b>aftermethod</b><br>Test class: tests.socialsites</td>
+<td></td>
+<td>0</td>
+<td>tests.socialsites@2c79a5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.socialsites.test()'><b>test</b><br>Test class: tests.socialsites</td>
+<td></td>
+<td>0</td>
+<td>tests.socialsites@2c79a5</td></tr>
+</table><p>
+</body>
+</html>
