@@ -1,18 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TestAll]">
-  <test name=" header Test(failed)">
+  <test name="cargo Test(failed)">
     <classes>
-      <class name="tests.cargotest">
-        <methods>
-          <include name="beforemethod"/>
-        </methods>
-      </class> <!-- tests.cargotest -->
       <class name="tests.footer">
         <methods>
           <include name="beforemethod"/>
         </methods>
       </class> <!-- tests.footer -->
+      <class name="tests.header">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- tests.header -->
+      <class name="tests.cargotest">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- tests.cargotest -->
+      <class name="tests.socialsites">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- tests.socialsites -->
+    </classes>
+  </test> <!-- cargo Test(failed) -->
+  <test name="footer Test(failed)">
+    <classes>
+      <class name="tests.footer">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- tests.footer -->
+      <class name="tests.header">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- tests.header -->
+      <class name="tests.cargotest">
+        <methods>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- tests.cargotest -->
+      <class name="tests.socialsites">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- tests.socialsites -->
+    </classes>
+  </test> <!-- footer Test(failed) -->
+  <test name=" socialsitesTest(failed)">
+    <classes>
+      <class name="tests.footer">
+        <methods>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- tests.footer -->
+      <class name="tests.header">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- tests.header -->
+      <class name="tests.cargotest">
+        <methods>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- tests.cargotest -->
+      <class name="tests.socialsites">
+        <methods>
+          <include name="test"/>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- tests.socialsites -->
+    </classes>
+  </test> <!--  socialsitesTest(failed) -->
+  <test name=" header Test(failed)">
+    <classes>
+      <class name="tests.footer">
+        <methods>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- tests.footer -->
+      <class name="tests.cargotest">
+        <methods>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- tests.cargotest -->
       <class name="tests.header">
         <methods>
           <include name="test"/>
