@@ -21,7 +21,7 @@ import testutils.Helper;
 public class cargotest  extends Helper
 {
 	         //Helper h= new Helper();
-     //dadhhahdhhd----------
+     //dadhhahdhhd
              @BeforeMethod
              public void beforemethod(){
 	         browserType();
