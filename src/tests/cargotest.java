@@ -20,7 +20,7 @@ import testutils.Helper;
 
 public class cargotest  extends Helper
 {
-	         Helper h= new Helper();
+	         //Helper h= new Helper();
      
              @BeforeMethod
              public void beforemethod(){
@@ -49,6 +49,7 @@ public class cargotest  extends Helper
 			 
 			 for(WebElement colElement:colCollection){
 			 System.out.print(colElement.getText() + "\t") ;
+			 //System.out.println();
 			 }
 			 System.out.println();
 			 }

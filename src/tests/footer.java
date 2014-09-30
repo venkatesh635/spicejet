@@ -26,7 +26,7 @@ public class footer  extends Helper
 	       loadPage();
 	       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
            }
-           
+         //this is my project  
 		   @Test
 		   public void test() {
 		   List<WebElement> li=driver.findElement(By.className(or.getProperty("footerclass"))).findElements(By.tagName("li"));
